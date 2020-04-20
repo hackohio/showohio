@@ -40,11 +40,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 385px;
 }
 
 .show-secondary-container {
-  width: 100%;
   min-height: 100vh;
   z-index: 10;
   color: white;
@@ -52,6 +50,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  min-height: 100vh;
 }
 
 .show-left-half {
@@ -61,6 +60,7 @@ a {
   padding-right: 2rem;
   opacity: 0.87;
   flex: 1;
+  min-height: 100vh;
 }
 
 .show-left-header {
@@ -118,6 +118,7 @@ a {
   position: relative;
   padding-right: 2rem;
   padding-left: 2rem;
+  min-height: 100vh;
 }
 
 .show-right-header {
@@ -334,6 +335,15 @@ a {
   }
   .show-bowtie {
     display: none;
+  }
+  .show-title-text > h1 {
+    font-size: 3.5em;
+  }
+  .show-right-main-content {
+    margin: 50px 0 120px;
+  }
+  .show-demo-link {
+    margin-left: 0;
   }
   .show-left-footer {
     margin: auto;
