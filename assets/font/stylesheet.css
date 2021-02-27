@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Connection II';
+    src: url('ConnectionII.woff2') format('woff2'),
+        url('ConnectionII.woff') format('woff'),
+        url('ConnectionII.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
