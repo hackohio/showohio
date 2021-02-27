@@ -173,11 +173,6 @@ a {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  opacity: 1;
-}
-
-.show-text-black {
-  color: black;
 }
 
 .show-title-text > h1 {
@@ -203,6 +198,21 @@ a {
 
 .show-title-text > h3 > a {
   text-decoration: underline;
+}
+
+.show-text-black {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.show-text-black > h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 5px 0 5px 0;
 }
 
 .show-title-arrow {
