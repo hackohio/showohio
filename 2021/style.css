@@ -6,11 +6,22 @@ html, body, section {
   height: 100%;
 }
 
+@font-face {
+    font-family: 'Connection II';
+    src: url('../assets/font/ConnectionII.woff2') format('woff2'),
+        url('../assets/font/ConnectionII.woff') format('woff'),
+        url('../assets/font/ConnectionII.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
+
 }
 
 a {
@@ -46,21 +57,27 @@ a {
   min-height: 100vh;
   z-index: 10;
   color: white;
-  background-color: #000000;
+  background-color: #808080;
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  min-height: 100vh;
+  min-height: 5vh;
+}
+
+.show-text {
+  animation: fadeIn 2.5s ease-out 3s 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 .show-left-half {
   display: flex;
-  background-color: #808080	;
+  background-color: transparent;
   padding-left: 2rem;
   padding-right: 2rem;
-  opacity: 0.87;
+  opacity: 1;
   flex: 1;
-  min-height: 100vh;
+  min-height: 5vh;
 }
 
 .show-left-header {
@@ -70,12 +87,14 @@ a {
 .show-header-text {
   animation: fadeIn 2.5s ease-out 3s 1;
   animation-fill-mode: forwards;
-  opacity: 0;
+  opacity: 1;
   padding-top: 20px;
   color: black;
   text-align: center;
   width: 100%;
   z-index: 999;
+  font-family: 'Connection II','proximanova', Proxima Nova, Helvetica, sans-serif;
+
 }
 
 .show-header-text > h2 {
@@ -98,6 +117,8 @@ a {
   animation: fadeIn 0.75s ease-out 0.75s 1;
   animation-fill-mode: forwards;
   opacity: 0;
+  padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .show-right-main-content {
@@ -112,13 +133,13 @@ a {
 
 .show-right-half {
   display: flex;
-  background-color: #f5e6c4;
-  opacity: 0.87;
+  background-color: transparent;
+  opacity: 1;
   flex: 1;
   position: relative;
   padding-right: 2rem;
   padding-left: 2rem;
-  min-height: 100vh;
+  min-height: 5vh;
 }
 
 .show-right-header {
@@ -169,14 +190,12 @@ a {
   text-align: center;
 }
 
-.show-text-black {
-  color: black;
-}
-
 .show-title-text > h1 {
   font-size: 4em;
   line-height: 1.2;
   margin: 5px 0 5px 0;
+   font-family: 'Connection II','proximanova', Proxima Nova, Helvetica, sans-serif;
+
 }
 
 .show-title-text > h2 {
@@ -196,6 +215,23 @@ a {
 
 .show-title-text > h3 > a {
   text-decoration: underline;
+}
+
+.show-text-black {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: black;
+    font-family: 'Connection II','proximanova', Proxima Nova, Helvetica, sans-serif;
+
+}
+
+.show-text-black > h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 5px 0 5px 0;
 }
 
 .show-title-arrow {
@@ -256,6 +292,8 @@ a {
 
 .show-right-footer {
   padding-bottom: 3rem;
+    text-align: center;
+
 }
 
 .show-right-footer-secondary {
@@ -283,11 +321,15 @@ a {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .show-demo-link:hover {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .show-modal {
@@ -343,7 +385,9 @@ a {
     margin: 50px 0 120px;
   }
   .show-demo-link {
-    margin-left: 0;
+    text-align: center
+    padding-left: 2rem;
+  padding-right: 2rem;
   }
   .show-left-footer {
     margin: auto;
@@ -359,6 +403,7 @@ a {
   }
   .show-demo-link {
     margin-top: 50px;
+    text-align: center;
   }
   .show-modal {
     width: 90%;
@@ -378,7 +423,7 @@ a {
 @keyframes addBackground {
   0% {}
   100% {
-    background: url("img/bg.jpg");
+    background: url("");
     z-index: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -387,3 +432,29 @@ a {
     width: 100%;
   }
 }
+
+#particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #727272;
+  background-image: linear-gradient(to right, #808080, #F5E6C4);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: -10;
+  top: 0;
+  left: 0
+}
+
