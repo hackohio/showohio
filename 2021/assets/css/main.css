@@ -30,6 +30,8 @@
 	--style2-alt: #453831;
 	--style3: #d65828;
 	--style3-alt: #d6660b;
+	--style4: #909738;
+	--style4-alt: #909738;
 	--button-text-color: #453831;
 	--button-color-after: #453831;
 }
@@ -2588,6 +2590,14 @@ input, select, textarea {
 					color: var(--style3-alt);
 				}
 
+				.wrapper.style4 .icon.major:before {
+					color: var(--style4);
+				}
+
+				.wrapper.style4-alt .icon.major:before {
+					color: var(--style4-alt);
+				}
+
 /* Image */
 
 	.image {
@@ -3298,6 +3308,14 @@ input, select, textarea {
 
 		.wrapper.style3-alt {
 			background-color: var(--style3-alt);
+		}
+
+		.wrapper.style4 {
+			background-color: var(--style4);
+		}
+
+		.wrapper.style4-alt {
+			background-color: var(--style4-alt);
 		}
 
 		.wrapper.fullscreen {
