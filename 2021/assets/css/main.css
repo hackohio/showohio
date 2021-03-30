@@ -32,6 +32,8 @@
 	--style3-alt: #d6660b;
 	--style4: #909738;
 	--style4-alt: #909738;
+	--style5: #26686d;
+	--style5-alt: #26686d;
 	--button-text-color: #453831;
 	--button-color-after: #453831;
 }
@@ -3316,6 +3318,14 @@ input, select, textarea {
 
 		.wrapper.style4-alt {
 			background-color: var(--style4-alt);
+		}
+
+		.wrapper.style5 {
+			background-color: var(--style5);
+		}
+
+		.wrapper.style5-alt {
+			background-color: var(--style5-alt);
 		}
 
 		.wrapper.fullscreen {
