@@ -20,8 +20,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
-
+  font-family: 'Connection II','proximanova', Proxima Nova, Helvetica, sans-serif;
 }
 
 a {
@@ -42,7 +41,7 @@ a {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  color: white;
+  color: black;
   min-height: 100vh;
 }
 
@@ -56,7 +55,7 @@ a {
 .show-secondary-container {
   min-height: 100vh;
   z-index: 10;
-  color: white;
+  color: black;
   background-color: #808080;
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +117,7 @@ a {
   animation-fill-mode: forwards;
   opacity: 0;
   padding-left: 2rem;
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .show-right-main-content {
@@ -129,6 +128,7 @@ a {
 
 .show-left-footer {
   padding-bottom: 1.75rem;
+  text-align: center;
 }
 
 .show-right-half {
@@ -188,6 +188,7 @@ a {
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  margin: 0 10rem 0 10rem;
 }
 
 .show-title-text > h1 {
@@ -211,10 +212,6 @@ a {
   font-weight: 600;
   line-height: 1.6;
   margin: 5px 0 5px 0;
-}
-
-.show-title-text > h3 > a {
-  text-decoration: underline;
 }
 
 .show-text-black {
@@ -312,6 +309,7 @@ a {
   letter-spacing: 2px;
   line-height: 60px;
   margin-left: -2rem;
+  margin: 0 10rem 0 10rem;
   min-width: 220px;
   opacity: 0;
   outline: 0;
@@ -329,7 +327,7 @@ a {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.6);
   padding-left: 2rem;
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .show-modal {
@@ -340,14 +338,13 @@ a {
   top: 30%;
   width: 40%;
   overflow: auto;
-  background-color: white;
+  background-color: black;
   border-radius: 10px;
   padding: 20px;
 }
 
 .show-modal-content a {
   color: black;
-  text-decoration: underline;
 }
 
 .show-modal-close {
@@ -391,12 +388,15 @@ a {
   }
   .show-left-footer {
     margin: auto;
+    text-align: center;
   }
   .show-champagne-glasses {
     margin-top: 50px;
+    text-align: center;
   }
   .show-right-footer {
     margin: auto;
+    text-align: center;
   }
   .show-logo-secondary {
     display: none;
