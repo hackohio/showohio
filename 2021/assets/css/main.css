@@ -15,11 +15,16 @@
 */
 
 :root {
+	--img-screen-full: 60px;
+	--img-screen-980: 60px;
+	--img-screen-736: 60px;
+	--img-screen-480: 40px;
 	--blue: #1e90ff;
 	--white: #ffffff;
-	--body-background: #453831;
+	--body-background: #5d1542;
 	--link-hover: #ffffff;
 	--bold-text: #ffffff;
+	--header-background: #000000;
 	--sidebar-background: #5d1542;
 	--sidebar-gradient: to right, #5d1542, #fff;
 	--select-option: #00ff00;
@@ -231,10 +236,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #ffffff, #ffffff);
+				background-image: -webkit-linear-gradient(to right, #ffffff, #ffffff);
+				background-image: -ms-linear-gradient(to right, #ffffff, #ffffff);
+				background-image: linear-gradient(to right, #ffffff, #ffffff);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2029,8 +2034,8 @@ input, select, textarea {
 
 	.features img{
 	    border-radius: 50%;
-	    width: 50px;
-        height: 50px;
+	    width: var(--img-screen-full);
+        height: var(--img-screen-full);
 	}
 
 		.features section {
@@ -2227,6 +2232,11 @@ input, select, textarea {
 					width: 100%;
 				}
 
+					.features img {
+						width: var(--img-screen-980);
+						height: var(--img-screen-980);
+					}
+
 					.features section:first-child {
 						border-top-width: 0 !important;
 					}
@@ -2239,10 +2249,18 @@ input, select, textarea {
 				padding: 2.5em 1.5em 0.1em 5.5em ;
 			}
 
+				.features img {
+					left: 1.5em;
+					top: 2em;
+					width: var(--img-screen-736);
+					height: var(--img-screen-736);
+				}
+
 				.features section .icon {
 					left: 1.5em;
 					top: 2em;
 				}
+				
 
 		}
 
@@ -2256,6 +2274,14 @@ input, select, textarea {
 					left: 0;
 					position: relative;
 					top: 0;
+				}
+
+				.features img {
+					left: 0;
+					position: relative;
+					top: 0;
+					height: var(--img-screen-480);
+					width: var(--img-screen-480);
 				}
 
 		}
@@ -3443,7 +3469,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #ffffff;
+		background-color: var(--header-background);
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3484,7 +3510,7 @@ input, select, textarea {
 						border: 0;
 						color: rgba(255, 255, 255, 0.35);
 						display: inline-block;
-						font-size: 0.6em;
+						font-size: 1.0em;
 						font-weight: bold;
 						letter-spacing: 0.25em;
 						text-transform: uppercase;
